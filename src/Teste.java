@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  *  Programa de código aberto para cálculo de quantidade de papel de parede a ser utilizada em uma parede
  *
- * @version 1.1
+ * @version 1.0
  * @author Felipe Silva Honorato
  *
  */
