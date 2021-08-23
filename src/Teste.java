@@ -6,6 +6,8 @@ import java.util.Scanner;
  * @version 1.0
  * @author Felipe Silva Honorato
  *
+ * Testando modificador 1 utilizando Intellij
+ *
  */
 
 public class Teste{
