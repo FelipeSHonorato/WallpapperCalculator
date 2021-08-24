@@ -1,4 +1,5 @@
 /**
+ *
  *  Programa de código aberto para cálculo de quantidade de papel de parede a ser utilizada em uma parede
  *
  * @version 1.0
@@ -23,7 +24,5 @@ public class Teste {
 
         System.out.println(info.getSomaMtQuadPapel());
         System.out.println(info.getSomaMtQuadParedes());
-
     }
-
 }
