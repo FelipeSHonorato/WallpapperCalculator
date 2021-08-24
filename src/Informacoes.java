@@ -16,15 +16,15 @@ public class Informacoes {
 
         double somaParcial = 0;
 
-        for (double metro : qtdMetros) {
-
-            System.out.println("Insira o valor da altura da parede em METROS");
+        for (int i = 0; i < qtdMetros.length; i++) {
+            System.out.println("Insira o valor da altura da parede " + (i + 1) + " em METROS");
             double alturaParede = scanner.nextDouble();
 
-            System.out.println("Insira o valor da largura da parede em METROS");
+            System.out.println("Insira o valor da largura da parede " + (i + 1) + " em METROS");
             double larguraParede = scanner.nextDouble();
 
             somaParcial += calculos.calcularMtQuadParede(alturaParede, larguraParede);
+
         }
         somaMtQuadParedes += somaParcial;
     }
@@ -41,11 +41,6 @@ public class Informacoes {
         somaMtQuadPapel = calculos.calcularMtQuadPapel(larguraPapel, comprimentoPapel);
     }
 
-    public double setSomaMtQuadParedes(double somaMtQuadParedes) {
-        return this.somaMtQuadParedes = somaMtQuadParedes;
-    }
-
-
     public double getSomaMtQuadParedes() {
         return somaMtQuadParedes;
     }
@@ -58,5 +53,6 @@ public class Informacoes {
         Calculos calculo = new Calculos();
         calculo.calcularQtdRolosNecessarios(somaMtQuadParedes, somaMtQuadPapel);
     }
+
 }
 
