@@ -6,7 +6,7 @@ public class Informacoes {
     private double somaMtQuadParedes;
     private double somaMtQuadPapel;
 
-    public double paredesInformacoes() {
+    public void paredesInformacoes() {
         Calculos calculos = new Calculos();
 
         System.out.println("Em quantas paredes você irá aplicar o papel de parede?");
@@ -25,12 +25,11 @@ public class Informacoes {
             double larguraParede = scanner.nextDouble();
 
             somaParcial += calculos.calcularMtQuadParede(alturaParede, larguraParede);
-
         }
-        return setSomaMtQuadParedes(somaParcial);
+        somaMtQuadParedes += somaParcial;
     }
 
-    public double papelInformacoes() {
+    public void papelInformacoes() {
         Calculos calculos = new Calculos();
 
         System.out.println("Insira a largura do rolo de papel de parede em METROS");
@@ -39,7 +38,7 @@ public class Informacoes {
         System.out.println("Insira a comprimento do rolo de papel de parede em METROS");
         double comprimentoPapel = scanner.nextDouble();
 
-        return somaMtQuadPapel = calculos.calcularMtQuadPapel(larguraPapel, comprimentoPapel);
+        somaMtQuadPapel = calculos.calcularMtQuadPapel(larguraPapel, comprimentoPapel);
     }
 
     public double setSomaMtQuadParedes(double somaMtQuadParedes) {
