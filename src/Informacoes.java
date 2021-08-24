@@ -6,6 +6,7 @@ public class Informacoes {
     private double somaMtQuadParedes;
     private double somaMtQuadPapel;
 
+
     public void paredesInformacoes() {
         Calculos calculos = new Calculos();
 
@@ -54,5 +55,9 @@ public class Informacoes {
         calculo.calcularQtdRolosNecessarios(somaMtQuadParedes, somaMtQuadPapel);
     }
 
+    public void infoQtdCola(){
+        Calculos calculo = new Calculos();
+        calculo.calcularQtdCola(somaMtQuadParedes);
+    }
 }
 
