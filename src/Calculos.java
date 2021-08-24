@@ -1,23 +1,18 @@
 public class Calculos {
 
-    double areaParede;
-    double areaPapel;
-    double qtdRolos;
-
-    public void metrosQuadradosParede(double alturaParede, double larguraParede) {
-        areaParede = alturaParede * larguraParede;
-        System.out.println("Sua parede tem: " + areaParede);
+    public double calcularMtQuadParede(double alturaParede, double larguraParede) {
+         return alturaParede * larguraParede;
     }
 
-    public void metrosQuadradosPapel(double larguraPapel, double comprimentoPapel) {
-        areaPapel = comprimentoPapel * larguraPapel;
-        System.out.println("Seu rolo de papel de parede tem: " + areaPapel);
+    public double calcularMtQuadPapel(double larguraPapel, double comprimentoPapel) {
+         return larguraPapel * comprimentoPapel;
     }
 
-    public void qtdRolosNecessarios() {
-        qtdRolos = Math.round(areaParede / areaPapel);
+    public void calcularQtdRolosNecessarios(double somaMtQuadParedes, double somMtQuadPapel) {
+        double qtdRolos = Math.ceil(somaMtQuadParedes / somMtQuadPapel);
         System.out.println("A quantidade de rolos necessário é de: " + (int) qtdRolos);
 
     }
+
 
 }
